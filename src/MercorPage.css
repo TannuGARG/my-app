@@ -1,0 +1,101 @@
+.mercor-main-div {
+  height: 100vh;
+  width: 100vw;
+  background-color: black;
+  color: white;
+}
+
+.mercor-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+.mercor-header-link {
+  color: white;
+  text-decoration: none;
+  font-size: small;
+  font-weight: 600;
+}
+.mercor-footer {
+  position: absolute;
+  bottom: 20px;
+  padding: 20px;
+  padding-bottom: 0px;
+  display: flex;
+  /* width: 100vw; */
+  flex-direction: row;
+  /* flex-wrap: wrap; */
+  width: calc(100% - 40px);
+  justify-content: space-between;
+  align-items: center;
+}
+
+.download-button {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  color: wheat;
+}
+.download-button .MuiButton-root {
+  color: white;
+  border-color: wheat;
+  font-weight: 600;
+}
+.download-button .MuiSvgIcon-root {
+  color: limegreen;
+}
+.download-for-android,
+.download-for-ios {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  height: 50px;
+  padding: 25px;
+  font-weight: 500;
+  border-radius: 8px;
+  font-size: small;
+}
+.social-share-icon {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  cursor: pointer;
+}
+.page-description {
+  width: 400px;
+  font-size: small;
+  font-weight: 400;
+  color: white;
+  opacity: 50%;
+  text-align: left;
+}
+.mercor-footer-share-icons {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  align-items: center;
+}
+
+@media only screen and (max-width: 1024px) {
+  .mercor-footer {
+    flex-direction: column;
+  }
+  .page-description {
+    width: calc(100% - 40px);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .mercor-footer {
+    align-items: center;
+  }
+  .mercor-footer-share-icons {
+    flex-direction: column;
+  }
+  .mercor-footer-share-icons {
+    gap: 10px;
+  }
+}
